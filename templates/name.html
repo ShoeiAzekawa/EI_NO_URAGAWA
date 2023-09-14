@@ -4,21 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>名前作成中</title>
-        <link href="../static/styles.css" rel="stylesheet" type="text/css">
+        <link href="../static/styles_name.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div id="result">
-            <img src="../result/1.jpg" alt="がぞう">
+        <div class="information">
+            <img src="../image/img_new_information.svg">
+            <div><p>コンセントのシミュラクラ<p></div>
         </div>
-        <br>
-        <h2 id="h2">なまえをきめてあげよう！</h2>
-        <div class="name">
-            <input type="text" id="customTextBox">
-            <!-- <img src="../image/img_input_name.svg" alt="なまえをきめるがぞう"> -->
+
+        <div class="result_box">
+            <img class="result_img" src="../result/1.jpg">
         </div>
-        <br>
-        <div class="name">
-            <img src="../image/img_dicision.svg" alt="けっていボタン">
-        </div>
+
+        <form method="post" enctype="multipart/form-data" action="upload_file">
+
+            <div class="text">
+                なまえをきめてあげよう！
+            </div>
+
+            <!--名前を入力する-->
+            <div class="img_input_name">
+                <input type="text" id="text_box_input_name">
+            </div>
+
+            <!--送信する-->
+            <label>
+                <div id="upload">
+                    <img src="../image/img_dicision.svg">
+                </div>
+                <input type="image" id="submit" name="submit">
+            </label>
+        </form>
+
     </body>
 </html>
