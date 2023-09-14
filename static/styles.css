@@ -25,7 +25,7 @@
 }
 
 #h2 {
-    margin-top: 400px;
+    margin-top: 200px;
     text-align: center;
 }
 
@@ -46,4 +46,23 @@ input#customTextBox {
     outline: none;
     width: 268px;
     height: 41px;
+}
+
+#my_file {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;   
+}
+
+#upload {
+    display: flex;
+    justify-content: center; 
+}
+
+#result {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center; 
+    width: 200px;
+    height: 200px;
 }
