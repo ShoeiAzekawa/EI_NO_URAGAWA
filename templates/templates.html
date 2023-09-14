@@ -11,7 +11,7 @@
         <form method="post" enctype="multipart/form-data" action="upload_file">
             <label class="custom-file">
                 <p id="view">
-                    とうじ<br>
+                    ひょうじ<br>
                     <img id="preview" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:200px;">
                 </p>
                 <!-- styleでファイルを選択を削除している -->
@@ -31,9 +31,13 @@
                 </script>
             </label>
             <!-- ファイルのアップロードの処理 -->
-            <input type="file" id="my_file" name="my_file" />
+            <div id="my_file">
+                <input type="file" id="my_file" name="my_file"/>
+            </div>
             <!-- <input type="submit" value="ファイルのアップロード" /> -->
-            <input type="image" name="submit" src="../image/img_send.svg" alt="送信">
+            <div id="upload">
+                <input type="image" name="submit" src="../image/img_send.svg" alt="送信">
+            </div>
         </form> 
     </body>
 </html>
