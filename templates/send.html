@@ -7,15 +7,17 @@
         <link href="../static/styles_send.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="illust">
+        <div class="loading">
             <img src="../image/loading.gif" alt="がぞう">
         </div>
-        <h2 id="h2">そうしんかんりょう</h2>
-        <h2 id="id">あなたのIDは{{count_file}}です</h2>
-        <p>ID</p>
         <form action="image" method="get">
-            <input type="text" name="imageID">
-            <input type="submit" name="submit">
+            <input type="hidden" name="imageID" class="imageID" value={{count_file}}>
+            <label>
+                <div class="next">
+                    <img src="../image/img_next.svg">
+                </div>
+                <input type="submit" name="submit" class="submit">
+            </label>
         </form>
     </body>
 </html>
