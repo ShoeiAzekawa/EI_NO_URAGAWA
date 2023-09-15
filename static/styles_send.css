@@ -3,9 +3,34 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     color: #454545;
-    background-color: #F7FEFF;
+    background-color: #ffffff;
     width: 75%;
     margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.loading {
+    margin-top: 200px;
+}
+
+.loading img {
+    width: 60%;
+}
+
+.next {
+    margin-top: 50px;
+}
+
+.next img {
+    width: 100%;
+}
+
+.submit {
+    display: none;
 }
